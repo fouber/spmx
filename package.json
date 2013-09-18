@@ -1,6 +1,6 @@
 {
   "name": "spmx",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a wrapper of fis to build seajs project",
   "main": "spmx.js",
   "bin": {
@@ -26,7 +26,7 @@
   "author": "fouber",
   "license": "MIT",
   "dependencies": {
-    "fis": "1.4.10",
+    "fis": "1.4.11",
     "fis-parser-coffee-script": "0.0.2",
     "fis-parser-less": "0.0.8",
     "fis-parser-utc": "0.0.2",
