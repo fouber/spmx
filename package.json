@@ -1,0 +1,38 @@
+{
+  "name": "spmx",
+  "version": "0.0.1",
+  "description": "a wrapper of fis to build seajs project",
+  "main": "spmx.js",
+  "bin": {
+    "spmx": "bin/spmx"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fouber/spmx.git"
+  },
+  "keywords": [
+    "fis",
+    "spm",
+    "seajs",
+    "requirejs",
+    "cmd",
+    "commonjs",
+    "modular",
+    "build"
+  ],
+  "author": "fouber",
+  "license": "MIT",
+  "dependencies": {
+    "fis": "1.4.10",
+    "fis-parser-coffee-script": "0.0.2",
+    "fis-parser-less": "0.0.8",
+    "fis-parser-utc": "0.0.2",
+    "fis-postpackager-seajs": "0.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/fouber/spmx/issues"
+  }
+}
