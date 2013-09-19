@@ -130,7 +130,7 @@ spmx release
     
     就可以发布到我的一个小服务器上，然后浏览器访问： http://vm-1.chongzi.kd.io/
 
-1. 加域名、压缩、加md5戳、校验、csssprite、把编译好的文件产出到output目录中（其实就是随意组合使用上面的参数啦）：
+1. 加域名、压缩、加md5戳、校验、csssprite、把编译好的文件产出到output目录中（其实就是随意组合使用前面提到面的参数啦）：
 
     ```bash
     spmx release -Domlp -d ../output
