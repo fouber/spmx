@@ -42,6 +42,11 @@ fis.config.merge({
                 useMap : false
             },
             {
+                //readme文件，不要发布
+                reg : /\/readme.md/i,
+                release : false
+            },
+            {
                 //前端模板
                 reg : '**.tmpl',
                 //当做类html文件处理，可以识别<img src="xxx"/>等资源定位标识
