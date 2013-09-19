@@ -153,7 +153,7 @@ spmx release
 1. ``.less`` 后缀的文件是less文件，编译后得到css文件。
 1. ``.minix.less`` 后缀的文件定义less的minix，编译后不会产出。
 1. ``.coffee`` 后缀的文件是coffee-script，编译后得到js文件。
-1. ``.tmpl`` 后缀的文件是underscore前端模板，左右定界符为 ``&lt;`` 和 ``&gt;``，编译后不会产出。在js或coffee中使用 ``__inline('path')`` 函数将其嵌入到js或coffee文件中作为模板函数使用。
+1. ``.tmpl`` 后缀的文件是underscore前端模板，左右定界符为 ``<%`` 和 ``%>``，编译后不会产出。在js或coffee中使用 ``__inline('path')`` 函数将其嵌入到js或coffee文件中作为模板函数使用。
 1. 扔在 ``sea-modules`` 目录下的js、css、less、coffee文件都是模块化文件，会自动包装define，自己就不要写了。使用seajs.use或者require加载模块的时候id与文件的对应规则是这样的：
 <table>
     <tr>
