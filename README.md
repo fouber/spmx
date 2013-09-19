@@ -45,7 +45,7 @@ npm install -g spmx
 
 安装成功后执行 ``spmx -h`` 即可看到相关开发命令帮助
 
-## 安装一个todo样例项目
+## 获得一个todo样例项目
 
 ```bash
 # 使用spmx的install命令来获取开发资源
