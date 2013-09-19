@@ -12,6 +12,8 @@ fis.config.merge({
                 reg : /^\/sea-modules\/([^\/]+)\/\1\.(js|coffee|less|css)$/i,
                 //是组件化的，会被jswrapper包装
                 isMod : true,
+                //less和css文件会做csssprite处理
+                useSprite : true,
                 //id为文件夹名
                 id : '$1'
             },
@@ -20,6 +22,8 @@ fis.config.merge({
                 reg : /^\/sea-modules\/(.*)\.(js|coffee|less|css)$/i,
                 //是组件化的，会被jswrapper包装
                 isMod : true,
+                //less和css文件会做csssprite处理
+                useSprite : true,
                 //id是去掉sea-modules和.js后缀中间的部分
                 id : '$1'
             },
@@ -30,8 +34,10 @@ fis.config.merge({
                 release : false
             },
             {
-                //其他js、css文件
+                //其他js、css、coffee、less文件
                 reg : /\.(js|coffee|css|less)$/,
+                //less和css文件会做csssprite处理
+                useSprite : true,
                 //不要放到js资源表里
                 useMap : false
             },
@@ -65,6 +71,9 @@ fis.config.merge({
             //.less后缀的文件使用fis-parser-less插件编译
             less : 'less'
         },
+        lint : {
+            js : 'jshint'
+        },
         postpackager : 'seajs'
     },
     settings : {
@@ -72,6 +81,14 @@ fis.config.merge({
             'coffee-script' : {
                 //不用coffee-script包装作用域
                 bare : true
+            }
+        },
+        lint : {
+            jshint : {
+                //排除对lib和jquery、backbone、underscore的检查
+                ignored : [ 'lib/**', /jquery|backbone|underscore/i ],
+                //使用中文报错
+                i18n : 'zh-CN'
             }
         },
         postprocessor : {
