@@ -43,7 +43,7 @@ fis.config.merge({
             },
             {
                 //readme文件，不要发布
-                reg : /\/readme.md/i,
+                reg : /\/readme.md$/i,
                 release : false
             },
             {
