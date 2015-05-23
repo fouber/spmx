@@ -61,7 +61,7 @@ spmx install seajs-todo-demo
 首先，启动内置的调试服务器：
 
 ```bash
-spmx server start --no-rewrite
+spmx server start
 ```
 
 此时spmx会启动一个精巧的jetty服务器，并且打开浏览器访问了 http://127.0.0.1:8080 ，现在这个调试环境什么也没有，接下来，我们在命令行下cd到我们下载的样例项目中：
